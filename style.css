@@ -12,6 +12,7 @@ body{
     background-position: top center;
     /*Propriedade para fazer a imagem cobrir todo o viewport*/
     background-size: cover;
+    height: 100vh;
 }
 body *{
     font-family: 'Inter', sans-serif;
@@ -167,4 +168,14 @@ footer{
     --switch-bg-url:url(assets/assets/sun.svg);
 
     
+}
+
+@media(min-width: 700px){
+    :root{
+        --bg-url: url(assets/assets/bg-desktop.jpg);
+    }
+
+    .Light{
+        --bg-url: url(assets/assets/bg-desktop-light.jpg);
+    }
 }
